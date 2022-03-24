@@ -1,0 +1,22 @@
+.container {
+  width: 99.4%;
+  position: relative;
+  margin: 90px 2rem 35px 0.5rem;
+}
+.title {
+  position: absolute;
+  color: rgba(238, 131, 44, 0.671);
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  top: -3rem;
+  left: 2rem;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+  }
+}

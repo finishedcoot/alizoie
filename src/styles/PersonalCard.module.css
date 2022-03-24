@@ -1,0 +1,92 @@
+.container {
+  position: relative;
+  width: 95% !important;
+
+  margin: 2rem 1rem 0 1rem;
+  height: 20rem;
+  transition: all 0.2s ease-in;
+}
+.container:hover {
+  transform: translateY(-10px);
+}
+
+.modalContainer {
+  opacity: 0;
+  border-radius: 10px;
+  width: 100.1%;
+  height: 100%;
+  position: absolute;
+  z-index: 10;
+  background: rgb(1, 0, 15);
+  background: linear-gradient(
+    0deg,
+    rgba(1, 0, 15, 0.8746849081429446) 29%,
+    rgba(251, 251, 251, 0.36207986612613796) 100%
+  );
+  transition: opacity 0.3s ease-in;
+}
+.container:hover .modalContainer {
+  opacity: 1;
+}
+.title {
+  font-family: "Roboto", sans-serif;
+  position: absolute;
+  bottom: -1.5rem;
+  left: 1.5rem;
+  font-weight: 500;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+
+  color: rgb(230, 230, 230);
+}
+.description {
+  position: absolute;
+  bottom: -0.5rem;
+  font-size: 18px;
+
+  color: rgb(230, 230, 230);
+  left: 1rem;
+  font-weight: 500;
+}
+.img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+  border-radius: 10px;
+}
+@media (min-width: 319px) {
+  .title {
+    font-size: 2rem;
+    letter-spacing: 4px;
+  }
+  .description {
+    letter-spacing: 2px;
+    font-size: 0.7rem;
+  }
+}
+@media (min-width: 767px) {
+  .title {
+    font-size: 2.8rem;
+    letter-spacing: 4px;
+  }
+  .description {
+    letter-spacing: 2px;
+  }
+  .container {
+    height: 25rem;
+    margin: 2rem 1rem 0 6rem;
+  }
+}
+@media (min-width: 1023px) {
+  .title {
+    font-size: 3.5rem;
+    letter-spacing: 6px;
+  }
+  .description {
+    letter-spacing: 2px;
+  }
+  .container {
+    height: 30rem;
+  }
+}

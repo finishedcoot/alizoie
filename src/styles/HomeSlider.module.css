@@ -1,0 +1,134 @@
+.landingImage {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 45%;
+  transition: opacity 0.2s ease-in;
+}
+
+.homepage_carousel {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(15, 13, 13);
+  overflow: hidden;
+}
+.myslide {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.buttonBubble {
+  display: none;
+}
+.slide {
+  height: 100vh;
+}
+
+.title {
+  font-family: "Roboto", sans-serif;
+  display: none;
+  font-size: 5rem;
+  position: absolute;
+  z-index: 400;
+  left: 1rem;
+  color: rgb(247, 247, 247);
+  letter-spacing: 8px;
+  transition: all 0.2s ease-in;
+}
+.title.above {
+  bottom: 6rem;
+}
+.title.below {
+  bottom: -3rem;
+}
+
+.firstTitle {
+  font-family: "Roboto", sans-serif;
+  position: absolute;
+  font-weight: 400;
+  z-index: 500;
+  left: 2rem;
+  bottom: 0.8rem;
+  color: rgb(247, 247, 247);
+  border: 1px solid;
+  padding: 0.1rem 0.9rem;
+  border-radius: 1.1rem;
+  letter-spacing: 1px;
+  transition: all 0.2s ease-in;
+}
+.firstTitle:hover {
+  color: rgba(0, 0, 0, 0.904);
+  background-color: rgba(247, 247, 247, 0.774);
+}
+@media (min-width: 767px) {
+  .buttonBubble {
+    display: inline-block;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(19, 17, 17, 0.911);
+    width: 15rem;
+    height: 15rem;
+    top: 0;
+    transform: translateY(-90%);
+
+    border-radius: 50%;
+    left: 45%;
+    z-index: 900 !important;
+    transition: all 0.5s ease-in-out;
+  }
+  .buttonBubble:hover {
+    transform: translateY(-75%);
+  }
+  .show_more_arrow {
+    margin-bottom: -10.2rem;
+  }
+  .linktoprj {
+    color: white;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: -0.2rem;
+  }
+  /* .firstTitle {
+    bottom: 5rem;
+    left: 5rem;
+    letter-spacing: 3px;
+    font-size: 48px;
+  } */
+  .firstTitle {
+    display: none;
+  }
+  .title {
+    display: inline-block;
+  }
+}
+@media (min-width: 1023px) {
+  .firstTitle {
+    bottom: 5rem;
+    left: 7rem;
+    letter-spacing: 5px;
+    font-size: 56px;
+  }
+  .title {
+    font-family: "Roboto", sans-serif;
+    font-size: 9rem;
+    position: absolute;
+    z-index: 1;
+    left: 5rem;
+    color: rgb(247, 247, 247);
+    letter-spacing: 8px;
+    transition: all 0.2s ease-in;
+  }
+  .title h1 {
+    font-weight: 400;
+  }
+  .title.above {
+    top: -10rem;
+  }
+  .title.below {
+    top: 8rem;
+  }
+}

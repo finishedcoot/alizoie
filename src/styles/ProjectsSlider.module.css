@@ -1,0 +1,48 @@
+.container {
+  position: relative;
+  margin-top: 8rem;
+}
+.title {
+  position: absolute;
+  color: rgba(238, 131, 44, 0.671);
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  top: -5rem;
+  left: 2rem;
+}
+.topic {
+  color: whitesmoke;
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-size: 1.3rem;
+  position: absolute;
+  top: -2.6rem;
+  left: 2rem;
+}
+.single_topic {
+  color: whitesmoke;
+  position: absolute;
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-size: 1.3rem;
+  top: -4rem;
+  left: 2rem;
+}
+@media (min-width: 768px) {
+  .title {
+    top: -6rem;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+  }
+
+  .topic {
+    letter-spacing: 2px;
+    font-size: 1.65rem;
+  }
+  .single_topic {
+    letter-spacing: 2px;
+    font-size: 1.65rem;
+  }
+}
