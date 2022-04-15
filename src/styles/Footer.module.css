@@ -61,4 +61,7 @@
   .copy_right {
     font-size: 7px;
   }
+  .footer_container{
+    height: 2.5rem;
+  }
 }

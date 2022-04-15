@@ -15,14 +15,14 @@ const ProjectsCard = ({ title, imgSrc, description, longtitle, single }) => {
       }
     >
       <Link to={`/Projects/${title}`}>
-        <a className={styles.modalContainer}>
+        <div className={styles.modalContainer}>
           <h1
             className={longtitle === "true" ? styles.longtitle : styles.title}
           >
             {cleanTitle}
           </h1>
           {/* <p className={styles.description}>{description} &#x0226B;</p> */}
-        </a>
+        </div>
       </Link>
       <LazyLoadImage
         effect="blur"

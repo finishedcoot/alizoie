@@ -11,6 +11,7 @@ const Projects = () => {
       exit={{ opacity: 0 }}
     >
       <div className={Style.container}>
+        <h2 className={Style.title}>PERSONAL</h2>
         <PersonalSlide />
         <ProjectsSlider />
       </div>

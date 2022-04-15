@@ -62,7 +62,7 @@ const ProjectsSlider = () => {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>WORKS</h1>
+      <h1 className={styles.title}>WORK</h1>
       {/* FASHION */}
       <h2 className={styles.topic}>FASHION</h2>
       <Slider {...settings3}>

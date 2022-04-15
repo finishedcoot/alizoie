@@ -3,10 +3,15 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import styles from "../../styles/PersonalCard.module.css";
 import { Link } from "react-router-dom";
 
-const PersonalCards = ({ imgSrc, title, description, position }) => {
-  console.log(position);
+const PersonalCards = ({ imgSrc, title, description, position, i }) => {
   return (
-    <div className={styles.container}>
+    <div
+      className={styles.container}
+      id={"personalSlide"}
+      style={{
+        marginLeft: `${i === 0 ? 0 : ""}`,
+      }}
+    >
       <Link to={`/Projects/${title}`}>
         <a className={styles.modalContainer}>
           <h1 className={styles.title}>{title}</h1>

@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import HomeStyle from "../../styles/HomeSlider.module.css";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import arrow from "../../static/keyboard_arrow_down_white_24dp.svg";
 export default function HomePage() {
   const settings = {
     arrows: true,
@@ -22,7 +21,7 @@ export default function HomePage() {
       {
         breakpoint: 936,
         settings: {
-          dots: false,
+          dots: true,
         },
       },
     ],
@@ -31,14 +30,16 @@ export default function HomePage() {
     <div className={`${HomeStyle.home_slides} ${HomeStyle.homepage_carousel}`}>
       <Slider {...settings}>
         <div className={HomeStyle.myslide}>
-          <span className={`${HomeStyle.title} ${HomeStyle.above}`}>
-            <h1>QI</h1>
-          </span>
-          <span className={`${HomeStyle.title} ${HomeStyle.below}`}>
-            <h1>SHM</h1>
-          </span>
+          <h1 className={`${HomeStyle.title}`}>
+            <Link to={"/Projects/QISHM"}>
+              <span>QISHM</span>
+            </Link>
+          </h1>
+
           <Link to={"/Projects/QISHM"}>
-            <h1 className={HomeStyle.firstTitle}> QISHM</h1>
+            <h1 className={HomeStyle.firstTitle}>
+              <span>QISHM</span>
+            </h1>
           </Link>
           <LazyLoadImage
             className={HomeStyle.landingImage}
@@ -53,21 +54,22 @@ export default function HomePage() {
         </div>
 
         <div className={HomeStyle.myslide}>
-          <span className={`${HomeStyle.title} ${HomeStyle.above}`}>
-            <h1>LA</h1>
-          </span>
-          <span className={`${HomeStyle.title} ${HomeStyle.below}`}>
-            <h1>FT</h1>
-          </span>
+          <h1 className={`${HomeStyle.title}`}>
+            <Link to={"/Projects/BELLE_DE_JOUR"}>
+              <span>BELLE DE JOUR</span>
+            </Link>
+          </h1>
 
-          <Link to={"/Projects/LAFT"}>
-            <h1 className={HomeStyle.firstTitle}> LAFT</h1>
+          <Link to={"/Projects/BELLE_DE_JOUR"}>
+            <h1 className={HomeStyle.firstTitle}>
+              <span>BELLE DE JOUR</span>{" "}
+            </h1>
           </Link>
           <LazyLoadImage
             className={HomeStyle.landingImage}
             alt={"laft"}
-            src={"/img/2.JPG"}
-            placeholderSrc={"/img/2p.JPG"}
+            src={"/img/2.jpg"}
+            placeholderSrc={"/img/2p.jpg"}
             effect="blur"
             wrapperClassName={"landingImagePlaceholder"}
             width={"100%"}
@@ -75,77 +77,51 @@ export default function HomePage() {
           />
         </div>
         <div className={HomeStyle.myslide}>
-          <span className={`${HomeStyle.title} ${HomeStyle.above}`}>
-            <h1>KELAR</h1>
-          </span>
-          <span className={`${HomeStyle.title} ${HomeStyle.below}`}>
-            <h1>DASHT</h1>
-          </span>
+          <h1 className={`${HomeStyle.title}`}>
+            <Link to={"/Projects/KAN"}>
+              <span>KAN</span>
+            </Link>
+          </h1>
 
-          <Link to={"/Projects/KELARDASHT"}>
-            <h1 className={HomeStyle.firstTitle}>KELARDASHT</h1>
-          </Link>
-          <LazyLoadImage
-            className={HomeStyle.landingImage}
-            alt={"kelardasht"}
-            src={"/img/3.JPG"}
-            placeholderSrc={"/img/3p.JPG"}
-            effect="blur"
-            wrapperClassName={"landingImagePlaceholder"}
-            width={"100%"}
-            height={"100%"}
-          />
-        </div>
-        <div className={HomeStyle.myslide}>
-          <span className={`${HomeStyle.title} ${HomeStyle.above}`}>
-            <h1>SA</h1>
-          </span>
-          <span className={`${HomeStyle.title} ${HomeStyle.below}`}>
-            <h1>RI</h1>
-          </span>
-
-          <Link to={"/Projects/SARI"}>
-            <h1 className={HomeStyle.firstTitle}>MORE</h1>
+          <Link to={"/Projects/KAN"}>
+            <h1 className={HomeStyle.firstTitle}>
+              <span>KAN</span>
+            </h1>
           </Link>
           <LazyLoadImage
             className={HomeStyle.landingImage}
             alt={"Sari"}
-            src={"/img/4.JPG"}
-            placeholderSrc={"/img/4p.JPG"}
+            src={"/img/4.jpg"}
+            placeholderSrc={"/img/4p.jpg"}
             effect="blur"
             wrapperClassName={"landingImagePlaceholder"}
             width={"100%"}
             height={"100%"}
           />
         </div>
+        <div className={HomeStyle.myslide}>
+          <h1 className={`${HomeStyle.title}`}>
+            <Link to={"/Projects/AVINA"}>
+              <span>AVINA</span>
+            </Link>
+          </h1>
 
-        {/* <HomeSlide
-          title={"QISHM"}
-          imgsrc={"/img/1.jpg"}
-          imgAlt={"Fashion Photo From Qishm"}
-          link={"/Projects/QISHM"}
-        />
-
-        <HomeSlide
-          title={"LAFT"}
-          imgsrc={"/img/2.jpg"}
-          imgAlt={"Industrial Design Photo from Laft"}
-          link={"/Projects/LAFT"}
-        />
-
-        <HomeSlide
-          title={"KELARDASHT"}
-          imgsrc={"/img/3.jpg"}
-          imgAlt={"memorable photo from Kelardasht"}
-          link={"/Projects/KELARDASHT"}
-        />
-
-        <HomeSlide
-          title={"SARI"}
-          imgsrc={"/img/4.jpg"}
-          imgAlt={"memorable photo from Sari"}
-          link={"/Projects/SARI"}
-        /> */}
+          <Link to={"/Projects/AVINA"}>
+            <h1 className={HomeStyle.firstTitle}>
+              <span>AVINA</span>
+            </h1>
+          </Link>
+          <LazyLoadImage
+            className={HomeStyle.landingImage}
+            alt={"kelardasht"}
+            src={"/img/3.jpg"}
+            placeholderSrc={"/img/3p.jpg"}
+            effect="blur"
+            wrapperClassName={"landingImagePlaceholder"}
+            width={"100%"}
+            height={"100%"}
+          />
+        </div>
       </Slider>
     </div>
   );
