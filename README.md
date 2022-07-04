@@ -1,3 +1,4 @@
+At first Zoie was going to be a simple portfolio for a talented friend of mine, but as we continued to develop it, this simple portfolio turned into a beautifull platform, it was made with reactjs and attention to smallest detail of client preference, currently hosted at aws.
 
 https://alizoie.com/
 
